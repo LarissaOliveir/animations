@@ -1,6 +1,6 @@
 # animations
 
-This mini project will be all in English. I'm sorry, my english is basic { i'm practice english }. Anyway, it's a mini CSS-Animation
+This mini project will be all in English. I'm sorry, my english is basic { i'm practice it }. Anyway, it's a mini CSS-Animation
 
 
 ** Photo
