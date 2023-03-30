@@ -1,0 +1,121 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    background-color: var(--color-two);
+}
+
+:root {
+    --color-one: #2f615e;
+    --color-two: #e9deb0;
+    --color-three: #d07e0e;
+    --color-four: #a73e2b;
+    --color-five: #482c21;
+}
+
+.main {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    padding: 10px 10px 30px 30px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* first */
+.animation-one {
+    background-color: var(--color-three);
+    text-align: center;
+    width: 10rem;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.animation-one:hover {
+    animation: rotation 1s infinite;
+    transition: all 1s;
+    background-color: var(--color-five);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* second */
+.animation-two {
+    background-color: var(--color-one);
+    text-align: center;
+    width: 10rem;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.animation-two:hover {
+    animation: pulse 1s infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        background-color: var(--color-five);
+    }
+    100% {
+        background-color: var(--color-one);
+        width: 4em;
+    }
+}
+
+/* thrid */
+.animation-three {
+    background-color: var(--color-four);
+    text-align: center;
+    width: 10rem;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.animation-three:hover {
+    position: relative;
+    animation-name: shift;
+    animation-duration: 10s;
+}
+
+@keyframes shift {
+    0% {
+        background-color: #d07e0e;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: #a73e2b;
+        left: 200px;
+        top: 0;
+    }
+    50% {
+        background-color: #482c21;
+        left: 200px;
+        top: 200px;
+    }
+    100% {
+        background-color: #2f615e;
+        left: 0;
+        top: 0;
+    }
+}
